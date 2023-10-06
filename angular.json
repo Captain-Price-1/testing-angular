@@ -37,6 +37,10 @@
           "configurations": {
             "production": {
               "outputPath": "dist",
+              "sourceMap": {
+                "scripts": false,
+                "hidden": true
+              },
               "budgets": [
                 {
                   "type": "initial",
