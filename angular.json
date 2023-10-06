@@ -37,10 +37,6 @@
           "configurations": {
             "production": {
               "outputPath": "dist",
-              "sourceMap": {
-                "scripts": true,
-                "hidden": true
-              },
               "budgets": [
                 {
                   "type": "initial",
@@ -56,10 +52,6 @@
               "outputHashing": "all"
             },
             "development": {
-              "sourceMap": {
-                "scripts": true,
-                "hidden": true
-              },
               "buildOptimizer": false,
               "optimization": false,
               "vendorChunk": true,
