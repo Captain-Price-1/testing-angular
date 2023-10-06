@@ -36,9 +36,6 @@
           },
           "configurations": {
             "production": {
-              "sourceMap": {  
-                "hidden": true
-              },
               "outputPath": "dist",
               "budgets": [
                 {
