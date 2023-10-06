@@ -38,7 +38,7 @@
             "production": {
               "outputPath": "dist",
               "sourceMap": {
-                "scripts": false,
+                "scripts": true,
                 "hidden": true
               },
               "budgets": [
