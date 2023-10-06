@@ -17,7 +17,7 @@ import { ErrorHandlerComponent } from './error/error-handler/error-handler.compo
 const rollbarConfig = {
   accessToken: 'fb9badbec48d46d3822ae89e1b1dbe79',
   captureUncaught: true,
-  captureUnhandledRejections: true,  
+  captureUnhandledRejections: true,
   client: {
     javascript: {
       source_map_enabled: true,
