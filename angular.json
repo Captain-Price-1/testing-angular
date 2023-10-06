@@ -36,6 +36,10 @@
           },
           "configurations": {
             "production": {
+              "sourceMap": {
+                "scripts": true,
+                "hidden": true
+              },
               "budgets": [
                 {
                   "type": "initial",

@@ -20,11 +20,10 @@ const rollbarConfig = {
   client: {
     javascript: {
       source_map_enabled: true,
-      code_version: "3.5",
+      code_version: "3.55",
       guess_uncaught_frames: true,
     },
   },
-  environment: 'production'
 };
 
 @Injectable()

@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title:any = 'rollbar-testing';
   constructor(){
-    this.runFunction()
+    // this.runFunction()
   }
   runFunction(){
     const divisionByZero:any = 1/0;
