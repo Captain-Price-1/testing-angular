@@ -12,6 +12,7 @@ import {
   ErrorHandler, Inject
 } from '@angular/core';
 import { AppComponent } from './app.component';
+import { ErrorHandlerComponent } from './error/error-handler/error-handler.component';
 
 const rollbarConfig = {
   enabled:true,
@@ -43,7 +44,7 @@ export const RollbarService = new InjectionToken<Rollbar>('rollbar');
 
 @NgModule({
   imports: [ BrowserModule ],
-  declarations: [ AppComponent ],
+  declarations: [ AppComponent, ErrorHandlerComponent ],
   bootstrap: [ AppComponent ],
   providers: [
     { provide: ErrorHandler, useClass: RollbarErrorHandler },
