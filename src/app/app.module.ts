@@ -15,7 +15,7 @@ import { AppComponent } from './app.component';
 import { ErrorHandlerComponent } from './error/error-handler/error-handler.component';
 
 const rollbarConfig = {
-  accessToken: 'a663b90e96da4df89037d139a38a0b3d',
+  accessToken: '21c939acc08546338e7f6763581c76a1',
   captureUncaught: true,
   captureUnhandledRejections: true,
   client: {
