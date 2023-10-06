@@ -11,6 +11,6 @@ export class ErrorHandlerComponent {
   }
   runfunction(){
     const divisionByZero:any = 1/0;
-    console.log(divisionByZero.find('a'))
+    console.log(divisionByZero.find('aaa'))
   }
 }
