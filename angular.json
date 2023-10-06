@@ -36,6 +36,7 @@
           },
           "configurations": {
             "production": {
+              "outputPath": "dist",
               "sourceMap": {
                 "scripts": true,
                 "hidden": true
