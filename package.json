@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build && node add-source-maps.js",
+    "build": "ng build && node add-source-maps.js && rollbar-cli upload-sourcemaps ./dist --access-token 8ff3a48aca244d479993a20e2a58a204 --url-prefix 'https://main--stunning-dolphin-3a4781.netlify.app/' --code-version 10.1\n",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

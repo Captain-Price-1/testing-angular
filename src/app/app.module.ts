@@ -21,9 +21,10 @@ const rollbarConfig = {
   client: {
     javascript: {
       source_map_enabled: true,
-      code_version: "3.55",
+      code_version: "10.1",
       guess_uncaught_frames: true,
     },
+    environment:'production'
   },
 };
 
