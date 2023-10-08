@@ -56,7 +56,9 @@
               "outputHashing": "all"
             },
             "development": {
+              "outputPath": "dist",
               "sourceMap": {
+                "scripts": true,
                 "hidden": true
               },
               "buildOptimizer": false,
