@@ -9,22 +9,23 @@ import {
   Injector,
   InjectionToken,
   NgModule,
-  ErrorHandler, Inject
+  ErrorHandler,
+  Inject,
 } from '@angular/core';
 import { AppComponent } from './app.component';
 import { ErrorHandlerComponent } from './error/error-handler/error-handler.component';
 
 const rollbarConfig = {
-  accessToken: 'f291c86f07384330be433f5b77b10961',
+  accessToken: '2c593d84b96b4bbbbbaa9788f2f4889b',
   captureUncaught: true,
   captureUnhandledRejections: true,
   client: {
     javascript: {
       source_map_enabled: true,
-      code_version: "10.1",
+      code_version: '10.1',
       guess_uncaught_frames: true,
     },
-    environment:'production'
+    environment: 'production',
   },
 };
 
@@ -32,7 +33,7 @@ const rollbarConfig = {
 export class RollbarErrorHandler implements ErrorHandler {
   constructor(@Inject(RollbarService) private rollbar: Rollbar) {}
 
-  handleError(err:any) : void {
+  handleError(err: any): void {
     this.rollbar.error(err.originalError || err);
   }
 }
@@ -44,12 +45,12 @@ export function rollbarFactory() {
 export const RollbarService = new InjectionToken<Rollbar>('rollbar');
 
 @NgModule({
-  imports: [ BrowserModule ],
-  declarations: [ AppComponent, ErrorHandlerComponent ],
-  bootstrap: [ AppComponent ],
+  imports: [BrowserModule],
+  declarations: [AppComponent, ErrorHandlerComponent],
+  bootstrap: [AppComponent],
   providers: [
     { provide: ErrorHandler, useClass: RollbarErrorHandler },
-    { provide: RollbarService, useFactory: rollbarFactory }
-  ]
+    { provide: RollbarService, useFactory: rollbarFactory },
+  ],
 })
-export class AppModule { }
+export class AppModule {}
